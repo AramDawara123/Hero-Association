@@ -1,0 +1,141 @@
+/* past alles aan in de website */
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  Arial, sans-serif;
+    background-color: orange;
+    overflow-y: hidden;
+}
+
+/* makes it so that the scroll bar is hidden untill the screen size is smaller then 1100px */
+@media screen and (max-width: 1100px) {
+    body {
+    overflow-y: visible;
+}
+}
+
+/* the 1st H1 */
+.title h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    color: rgb(84, 84, 84);
+}
+
+/* past de locatie van de 1ste H1 aan */
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* container before the img */
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* size of the 1ste img */
+.saitamapfp {
+height: 500px;
+}
+
+/* makes it so if the screen is smaller then 500px it changes what is specified  */
+@media screen and (max-width: 500px){
+.saitamapfp {
+    height: 300px;
+}
+}
+
+.right {
+    background-image: linear-gradient(to bottom, red, purple);
+    border-radius: 30px;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    color: white;
+    order: -1;
+}
+
+/* makes the leaderboard go down 1 */
+.leaderboard {
+    order: 1;
+}
+
+.right p {
+    font-weight: 600;
+}
+
+/* leaderboard h3 */
+.ld {
+    margin: 0 0 8px 0;
+}
+
+/* Tabelstijlen */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+thead th {
+    padding: 5px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+tbody td {
+    padding: 5px;
+    text-align: left;
+}
+
+/* Alternatieve rijkleuren */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Stijl voor winnaars en topplaatsen */
+#winner, #runner-up, #second-runner-up {
+    font-weight: bold;
+}
+
+#winner {
+    color: gold;
+}
+
+#runner-up {
+    color: silver;
+}
+
+#second-runner-up {
+    color: #cd7f32;
+}
+
+/* only applys when the screen is smaller then 800px */
+@media screen and (max-width: 800px) {
+    /* makes the introduction to the top */
+    .right {
+        order: -1;
+    }
+    
+    /* makes the leaderboard go down 1 */
+    .leaderboard {
+        order: 1;
+    }
+}

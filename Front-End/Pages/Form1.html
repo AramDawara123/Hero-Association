@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/form1.css">
+    <link rel="stylesheet" href="/CSS/Form-mul.css">
+    <title>Sign-Up</title>
+</head>
+<body>
+
+    <ul class="centernav">
+        <a href="/Pages/index.html"><img class="HomeButton" src="/images/home.png" alt="Home"></a>
+        <li><a href="/Pages/leaderboard.html"><h2>Leaderboard</h2></a></li>
+        <li><a href="/Pages/Hero-Profiles.html"><h2>Hero Profiles</h2></a></li>
+        <li><a href="/Pages/Form1.html"><h2>Sign Up</h2></a></li>
+        <li><a href="/Pages/contact.html"><h2>Contact</h2></a></li>
+    </ul>
+
+<div class="title">
+    <h1>Welcome Future Hero's !</h1>
+    <p>In this page you can sign up and become a hero !<br>
+        please fill out this form truthfully.<br>this form has a second part
+    </p>
+</div>
+<div class="center">
+    <div class="form1">
+        <form class="legal-information" action="save_data.php" method="post">
+            <div class="input-group">
+                <label for="fname">First name</label>
+                <input type="text" name="Fname" placeholder="Your name" required>
+            </div>
+            <div class="input-group">
+                <label for="hname">Hero alias</label>
+                <input type="text" name="Hname" placeholder="Your hero alias" required>
+            </div>
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="number" name="Age" placeholder="Your age" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="Email" placeholder="Your email" required>
+            </div>
+            <div class="input-group">
+                <label for="tnumber">Phone number</label>
+                <input type="tel" name="Tphone" placeholder="Your number" required>
+            </div>
+            <div class="input-group">
+                <label for="emergency">Emergency number</label>
+                <input type="tel" name="Ephone" placeholder="Emergency number" required>
+            </div>
+            <div class="p-button">
+                <a class="button1" href="/Pages/index.html"><p>Return Home</p></a>
+                <a class="button1" href="/Pages/form2.html">Next</a>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

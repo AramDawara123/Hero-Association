@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/form2.css">
+    <link rel="stylesheet" href="/CSS/Form-mul.css">
+    <title>Sign-Up</title>
+</head>
+<body>
+
+    <ul class="centernav">
+        <a href="/Pages/index.html"><img class="HomeButton" src="/images/home.png" alt="Home"></a>
+        <li><a href="/Pages/leaderboard.html"><h2>Leaderboard</h2></a></li>
+        <li><a href="/Pages/Hero-Profiles.html"><h2>Hero Profiles</h2></a></li>
+        <li><a href="/Pages/Form1.html"><h2>Sign Up</h2></a></li>
+        <li><a href="/Pages/contact.html"><h2>Contact</h2></a></li>
+    </ul>
+
+<div class="title">
+    <h1>Tell us your journey</h1>
+    <p>
+        In this page you need to tell a little bit about yourself<br>
+        And your motivation of why you want to become a hero !
+    </p>
+</div>
+<div class="center">
+    <div class="form1">
+        <form class="extra-information" action="save_data.php" method="post">
+            <div class="group2">
+                <label for="Backstory">Backstory</label>
+                <textarea name="Backstory" placeholder="max 300 words" cols="25" rows="7"></textarea>
+            </div>
+            <div class="group2">
+                <label for="motivation">Motivation</label>
+                <textarea name="Motivation" placeholder="max 150 words" cols="25" rows="5"></textarea>
+            </div>
+            <div class="p-button">
+                <a class="button1" href="/Pages/Form1.html"><p>Back</p></a>
+                <button class="button1" type="button">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

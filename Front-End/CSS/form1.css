@@ -1,0 +1,31 @@
+/* title p styling */
+.title p {
+    margin: 14.5px;
+}
+
+/* gives the questions a spacing */
+.input-group {
+    margin-bottom: 30px;
+}
+
+/* change this for the form1 styling */
+.input-group label {
+    text-align: left;
+}
+
+/* adds more spacing inside the inputs */
+input {
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+}
+
+/* makes it so when the screen is smaller then 430px it apply's whats specified down below */
+@media screen and (max-width: 430px) {
+    .input-group label {
+        text-align: inherit;
+    }
+    .input-group label {
+        color: red;
+    }
+}

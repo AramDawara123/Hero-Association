@@ -1,0 +1,54 @@
+/* edit for changing the position of the title */
+.title {
+    margin: 21px;
+}
+
+/* title p styling */
+.title p {
+    margin-top: 10px;
+}
+
+/* gives the questions a spacing */
+.group2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* text area styling */
+textarea {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* When screen is smaller than 430px then these things apply */
+@media screen and (max-width: 430px) {
+
+    .group2 label {
+        color: red
+    }
+
+    /* Change the font size of the h1 in title */
+    .title:first-of-type h1 {
+        font-size: 30px;
+    }
+
+    /* Adjust the spacing for the questions */
+    .group2 {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    /* Adjust the textarea styling */
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Adjust the button styling */
+    .button1 {
+        width: 100%;
+        font-size: 14px;
+    }
+}

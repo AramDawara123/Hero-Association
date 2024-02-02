@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/leaderboard.css">
+    <link rel="stylesheet" href="/CSS/Nav.css">
+    <script src="/JS/script.js"></script>
+    <title>Leaderboard</title>
+</head>
+<body>
+
+<ul class="centernav">
+    <a href="/Pages/index.html"><img class="HomeButton" src="/images/home.png" alt="Home"></a>
+    <li><a href="/Pages/leaderboard.html"><h2>Leaderboard</h2></a></li>
+    <li><a href="/Pages/Hero-Profiles.html"><h2>Hero Profiles</h2></a></li>
+    <li><a href="/Pages/Form1.html"><h2>Sign Up</h2></a></li>
+    <li><a href="/Pages/contact.html"><h2>Contact</h2></a></li>
+</ul>
+
+    <div class="title">
+        <h1>Hero Association</h1>
+    </div>
+
+    <div class="leaderboard">
+        <input id="search" class="search" placeholder="Search" oninput="search()">
+        <input id="scoreFilter" class="search" placeholder="Filter by Score" oninput="filterByScore()">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Heroes</th>
+                <th>Score</th>
+                <th>Average</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="winner">1</td>
+                <td>
+                    <img src="/images/saitama.png">
+                    <p>Saitama</p>
+                </td>
+                <td>239</td>
+                <td>12.54</td>
+            </tr>
+            <tr>
+                <td id="runner-up">2</td>
+                <td>
+                    <img src="/images/Genos.png">
+                    <p>Genos</p>
+                </td>
+                <td>209</td>
+                <td>10.2</td>
+            </tr>
+            <tr>
+                <td id="second-runner-up">3</td>
+                <td>
+                    <img src="/images/bike.png">
+                    <p>Mumen Rider</p>
+                </td>
+                <td>154</td>
+                <td>8.4</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    <img src="/images/tornado.png">
+                    <p>Tornado of Terror</p>
+                </td>
+                <td>100</td>
+                <td>3.1</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    <img src="/images/Bang.png">
+                    <p>Bang</p>
+                </td>
+                <td>82</td>
+                <td>2.0</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>
+                    <img src="/images/AtomicSamurai.png">
+                    <p>Atomic Samurai</p>
+                </td>
+                <td>82</td>
+                <td>2.0</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>
+                    <img src="/images/king.png">
+                    <p>King</p>
+                </td>
+                <td>82</td>
+                <td>2.0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <p>&copy; Aram Dawara - Aidardi Duckers (Riders)</p>
+    </footer>
+
+</body>
+</html>

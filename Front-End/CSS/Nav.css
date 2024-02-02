@@ -1,0 +1,56 @@
+/* makes the nav responsive */
+.centernav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: red;
+}
+
+/* styling of the background of the button */
+.centernav li {
+    border-style: none;
+    width: 190px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 35px;
+}
+
+/* edits the behavior when u hover over the buttons */
+.centernav li:hover {
+    border-style: none;
+    background-image: linear-gradient(to bottom, orange, orange, red);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 400ms;
+    transform: translateY(-4px);
+}
+
+/* edits the button font */
+.centernav h2 {
+    color: white;
+}
+
+/* removes and makes the link and style better */
+.centernav a {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+/* img logo left */
+.HomeButton {
+    height: 5rem;
+}
+
+/* makes it so that when the screen is too small it makes it a column */
+@media screen and (max-width: 500px) {
+    .centernav {
+        flex-direction: column;
+    }
+}
